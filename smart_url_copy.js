@@ -9,10 +9,11 @@ smart_url_copy.prototype.run = function(){
   var alertDiv = document.createElement("div");
   alertDiv.innerHTML = "点击我复制";
   alertDiv.style.position = "fixed";
-  alertDiv.style.top = "10px";
-  alertDiv.style.right = "50px";
+  alertDiv.style.top = "20px";
+  alertDiv.style.right = "50%";
   alertDiv.style.zIndex = "9999";
-  alertDiv.style.outline = "#00ff00 solid";
+  alertDiv.style.backgroundColor = "#019875";
+  alertDiv.style.fontSize = "5em";
   body.appendChild(alertDiv);
   var client = new ZeroClipboard(alertDiv);
   client.setText(this.smart_url);
