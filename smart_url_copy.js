@@ -8,6 +8,7 @@ smart_url_copy.prototype.run = function(){
   var body = document.getElementsByTagName('body')[0];
   var alertDiv = document.createElement("div");
   alertDiv.innerHTML = "点击我复制";
+  alertDiv.style.position = "fixed";
   alertDiv.style.top = "10px";
   alertDiv.style.right = "50px";
   alertDiv.style.zIndex = "9999";
