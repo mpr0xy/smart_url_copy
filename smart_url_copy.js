@@ -25,7 +25,7 @@ smart_url_copy.prototype.run = function(){
       alertDiv.innerHTML = "<span>复制Url成功</span>";
       setTimeout(function(){
         body.removeChild(alertDiv);
-      }, 5000);
+      }, 800);
     });
   });
 }
