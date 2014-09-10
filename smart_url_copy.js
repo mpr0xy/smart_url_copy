@@ -7,7 +7,7 @@ smart_url_copy.prototype.run = function(){
   // 
   var body = document.getElementsByTagName('body')[0];
   var alertDiv = document.createElement("div");
-  alertDiv.innerHTML = "点击我复制";
+  alertDiv.innerHTML = "<span>点击我复制Url</span>";
   alertDiv.style.position = "fixed";
   alertDiv.style.top = "20px";
   alertDiv.style.left = "40%";
@@ -22,7 +22,7 @@ smart_url_copy.prototype.run = function(){
   client.on( "ready", function( readyEvent ) {
     client.on( "aftercopy", function( event ) {
       client.destroy();
-      alertDiv.innerHTML = "复制成功";
+      alertDiv.innerHTML = "<span>复制Url成功</span>";
       setTimeout(function(){
         body.removeChild(alertDiv);
       }, 5000);
