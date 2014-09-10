@@ -4,7 +4,7 @@
     var scr = document.createElement('script');
     scr.type = 'text/javascript';
     scr.src = '//zeroclipboard.org/javascripts/zc/v2.1.6/ZeroClipboard.js';
-    scr.onload = script.onreadystatechange = function(){
+    scr.onload = scr.onreadystatechange = function(){
       if (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete'){
         loadSmartJs();
       }
@@ -24,5 +24,5 @@
     scr.src = '//raw.githubusercontent.com/mpr0xy/smart_url_copy/master/smart_url_copy.js';
     document.getElementsByTagName('body')[0].appendChild(scr);
   }
-  
+
 })();

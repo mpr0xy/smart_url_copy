@@ -5,7 +5,7 @@ var smart_url_copy = function(){
 
 smart_url_copy.prototype.run = function(){
   // 
-  var body = document.getElementsByTagName('body');
+  var body = document.getElementsByTagName('body')[0];
   var alertDiv = document.createElement("div");
   alertDiv.innerHTML = "点击我复制";
   alertDiv.style = "position:fixed;top:10px;right:50px;z-index:9999;outline:#00ff00 solid"
