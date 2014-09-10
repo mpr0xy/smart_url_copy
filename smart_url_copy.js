@@ -14,7 +14,7 @@ smart_url_copy.prototype.run = function(){
   alertDiv.style.zIndex = "9999";
   alertDiv.style.backgroundColor = "#019875";
   alertDiv.style.fontSize = "30px";
-  alertDiv.style.height = "80px";
+  alertDiv.style.color = "#3075dc"
   alertDiv.style.padding = "10px";
   body.appendChild(alertDiv);
   var client = new ZeroClipboard(alertDiv);
