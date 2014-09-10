@@ -10,17 +10,22 @@ smart_url_copy.prototype.run = function(){
   alertDiv.innerHTML = "点击我复制";
   alertDiv.style.position = "fixed";
   alertDiv.style.top = "20px";
-  alertDiv.style.right = "50%";
+  alertDiv.style.left = "40%";
   alertDiv.style.zIndex = "9999";
   alertDiv.style.backgroundColor = "#019875";
-  alertDiv.style.fontSize = "5em";
+  alertDiv.style.fontSize = "40px";
+  alertDiv.style.height = "80px";
+  alertDiv.style.padding = "10px";
   body.appendChild(alertDiv);
   var client = new ZeroClipboard(alertDiv);
   client.setText(this.smart_url);
   client.on( "ready", function( readyEvent ) {
     client.on( "aftercopy", function( event ) {
       client.destroy();
-      body.removeChild(alertDiv);
+      alertDiv.innerHTML = "复制成功";
+      setTimeout(function(){
+        body.removeChild(alertDiv);
+      }, 5000);
     });
   });
 }
